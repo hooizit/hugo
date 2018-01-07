@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Hugo - Video</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-4">
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-4">
+                <p class="logo">
+                    <img src="img/logo.png" alt="HuGo">
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-4">
+                <nav><i class="fa fa-bars fa-2x"></i></nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<video autoplay muted loop preload="auto">
+    <source src="img/concert.mp4" type="video/mp4">
+</video>
+
+<main>
+    <section class="events">
+        <div class="col-sm-6">
+            <div class="event">
+                <article>
+                    <div class="thin-headers">Featured Album</div>
+                    <p>
+                        Check out my newest Music Albums. You can easily purchase our music
+                        albums or gifts for your friends via <a href="#">iTunes</a> or
+                        <a href="#">Google Play</a>.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="event">
+                <div class="event-image">
+                    <img src="img/webwill.jpg" alt="webmill" class="first">
+                    <img src="img/beat.png" alt="Album cover" class="beat">
+                    <img src="img/disc.png" alt="Album disc" class="disc">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="event">
+                <video poster="img/deadmouse.jpg" controls preload="auto">
+                    <source src="img/concert.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="event">
+                <article>
+                    <div class="thin-headers">The Beat</div>
+                    <p>
+                        Music video by Mirotic Artist performing The Beat. Available now on iTunes: <a href="#">
+                        http://smarturl.it/HiTunes?IQid=yt</a><br>
+                        (c) 2015 DZOAN Entertainment International Limited.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="event-timer">
+        <div class="event-timer-box">
+            <div class="thin-headers">Next Event In:</div>
+            <span><i class="fa fa-clock-o"></i> Jan 6, 2014 in Times Square, New York, USA.</span>
+        </div>
+        <div class="event-timer-box">
+            <div class="thin-headers">25</div>
+            <span>Days</span>
+        </div>
+        <div class="event-timer-box">
+            <div class="thin-headers">16</div>
+            <span>Hours</span>
+        </div>
+        <div class="event-timer-box">
+            <div class="thin-headers">48</div>
+            <span>Minutes</span>
+        </div>
+        <div class="event-timer-box">
+            <div class="thin-headers">16</div>
+            <span>Seconds</span>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form action="#" oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                        <fieldset>
+                            <legend>Music</legend>
+                            <p>
+                                Genre
+                                <input list="events">
+                                <datalist id="events">
+                                    <option value="House Music">
+                                    <option value="Rock Festival">
+                                    <option value="Beach Party">
+                                    <option value="Transmission">
+                                    <option value="Etno Festival">
+                                </datalist>
+                            </p>
+                            <p>
+                                Range
+                                <input type="range" name="b" value="50" /> +
+                                <input type="number" name="a" value="10" /> =
+                                <output name="result">60</output>
+                            </p>
+                            <p>
+                                <input type="submit">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <form>
+                        <fieldset>
+                            <legend>Subscribe</legend>
+                            <p>
+                                <label for="name">Name <em>*</em></label>
+                                <input type="text" id="name">
+                            </p>
+                            <p>
+                                <label for="email">E-mail <em>*</em></label>
+                                <input type="email" id="email">
+                            </p>
+                            <p><input type="submit" value="Send"></p>
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="instagram">
+        <div class="instagtam-heading">
+            <i class="fa fa-instagram fa-3x"></i>
+            <div class="thin-headers">Instagram</div>
+        </div>
+        <div class="insta-feed">
+            <div class="col-md-2 col-sm-3"><img src="img/insta1.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta2.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta3.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta4.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta5.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta6.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta7.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta8.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta9.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta10.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta11.jpg" alt=""></div>
+            <div class="col-md-2 col-sm-3"><img src="img/insta12.jpg" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <p class="logo">
+                        <img src="img/logo.png" alt="HuGo">
+                    </p>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-4">
+                    <span>&copy; 2017 HUGO. All rights resevered. Designed by DZOAN</span>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-4">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
